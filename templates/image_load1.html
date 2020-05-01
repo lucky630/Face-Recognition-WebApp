@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Face Recog WebApp</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  body {
+  background-color: grey;
+}
+</style>
+</head>
+<body>
+
+<div class="col-md-4 col-md-offset-4">
+<div class="container">
+<div class="abc" align="left">
+<h1><strong>Image Recognition WebApp</strong></h1>
+</br></br>
+<form action = "http://ip-address:5000/uploader" method = "POST" enctype = "multipart/form-data">
+<div class="form-group">
+  <input type='file' name = "file" onchange="readURL(this);" />
+    <img id="blah" src="#" alt="your image" />
+	</div>
+	<p><strong>Note:</strong> Please Upload your image</p>
+	</br>
+	<input type="submit" class="btn btn-info" value="Submit">
+</form>
+</br>
+<form action = "http://ip-address:5000/" method = "GET">
+	<input type="submit" class="btn btn-info" value="Go back!">
+</form>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

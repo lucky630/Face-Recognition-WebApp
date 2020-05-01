@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Face Recog OutPut</title>
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  body {
+  background-color: grey;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="abc" align="left">
+<div class="col-md-4 col-md-offset-4">
+<h2>{{ ident }}</h2>
+</br></br>
+<img src="http://ip-address:8000/out.jpg" class="img-rounded" alt="OutPutImage" width="200" height="333"/>
+
+<form action = "http://ip-address:5000/main1" method = "GET">
+	<input type="submit" class="btn btn-info" value="Go back!">
+</form>
+</div>
+</div>
+</div>
+
+</body>
+</html>

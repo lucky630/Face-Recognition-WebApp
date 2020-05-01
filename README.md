@@ -7,7 +7,20 @@ The Application can be used in the following three ways:
 
 2. Doing Face Recognition on the Remote camera footage.
 
-3. Doing FAce Recognition on its own camera footage.
+3. Doing Face Recognition on its own camera footage.
 
-Link to the Demo Video
+# Setup Requirements
+- face_recognition
+- pygame
+- imutils
+- dlib
+- PIL
+- cv2
+- Flask
+
+# To Run
+Run hello1.py for running the Flask Application
+
+## Demo Video
+
 https://www.youtube.com/watch?v=FSpsOhoXHXw

@@ -1,4 +1,4 @@
-## Face-Recognition-WebApp
+# Face Recognition WebApp
 
 This is the Face Recognition web Application developed Using dlib and face recognition packages.
 The Application can be used in the following three ways:
@@ -21,6 +21,6 @@ The Application can be used in the following three ways:
 # To Run
 Run hello1.py for running the Flask Application
 
-## Demo Video
+# Demo Video
 
 https://www.youtube.com/watch?v=FSpsOhoXHXw
